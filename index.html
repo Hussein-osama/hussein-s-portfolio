@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hussein Osama's Portfolio">
+    <title>Hussein Osama | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container parallax-background">
+            <div class="intro">
+                <img src="./WhatsApp Image 2023-10-09 at 9.40.14 PM.png" alt="Hussein Osama" class="profile-pic">
+                <div class="intro-text-wrapper">
+                    <div class="animation-container">
+                        <p class="animated-text">Hello, my name is Hussein Osama Hussein</p>
+                    </div>                    <p class="intro-text">Welcome to my personal portfolio website. I specialize in front-end and back-end development, cloud solutions, and AI integration.</p>
+                    <p class="intro-text">I love building scalable, high-performance applications using JavaScript frameworks and cloud platforms. Explore my work and get in touch for potential collaborations.</p>
+                    <a href="#contact" class="btn-contact">Get in Touch</a>
+    
+                    <!-- Social Media Icons -->
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/hussein-osama" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Hussein-osama" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:hussein@example.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>JavaScript (Node.js, React, Angular)</li>
+                <li>HTML5, CSS3, SASS</li>
+                <li>MongoDB, SQL</li>
+                <li>Docker, Kubernetes</li>
+                <li>RESTful APIs, JWT, Express.js</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Paradise Nursery Shopping Application</h3>
+                <p>An e-commerce application for plant shopping, featuring a shopping cart, authentication, and payment integration.</p>
+                <a href="https://github.com/Hussein-osama/jbbmo-Introduction-to-Git-and-GitHub" target="_blank">GitHub Repository</a>
+            </div>
+            <div class="project-card">
+                <h3>GiftLink</h3>
+                <p>A full-stack gift recommendation platform built with Node.js and Angular, containerized with Docker, and deployed using Kubernetes.</p>
+                <a href="https://github.com/Hussein-osama/giftlink" target="_blank">GitHub Repository</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to get in touch with me on LinkedIn or GitHub!</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/hussein-osama-a4b38b1b7/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Hussein-osama" target="_blank">GitHub</a></li>
+            </ul>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hussein Osama. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

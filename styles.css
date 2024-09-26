@@ -1,0 +1,268 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables for Colors */
+:root {
+    --primary-color: #0073e6;
+    --secondary-color: #00e676;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --white-color: #fff;
+}
+
+/* Base Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--dark-color);
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.section {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: var(--light-color);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project-card {
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Form Styling */
+form {
+    margin-top: 2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary-color);
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 4rem;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    animation: scaleIn 1.2s ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.intro-text-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.intro-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.typing-text {
+    color: var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 0;
+    animation: typing 4s steps(20, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    color: var(--white-color);
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: var(--secondary-color);
+}
+
+/* Button Styling */
+.btn-contact {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #00b14f;
+}
+/* Animation Container */
+.animation-container {
+    text-align: center;
+}
+/* Animated Text */
+.animated-text {
+    font-size: 2rem;
+    color: #333;
+    overflow: hidden; /* Ensures that text is not visible before the animation */
+    border-right: 2px solid #00e676; /* Cursor effect */
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: typing 5s steps(40, end) infinite alternate, blink-caret 0.75s step-end infinite;
+}
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Start width */
+    }
+    to {
+        width: 100%; /* End width */
+    }
+}
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent; /* Invisible caret */
+    }
+    50% {
+        border-color: #00e676; /* Visible caret */
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .intro-heading {
+        font-size: 2.5rem;
+    }
+}
